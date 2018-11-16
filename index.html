@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Test</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        <div class="top">
+            <div class="wrapper">
+                <h1>Favorite EDM</h1>
+                <span id="logo"> <i class="fas fa-play"></i></span>
+
+            </div>
+        </div>
+
+        <div id="app">
+            <div class="wrapper">
+                <div v-for="album in albums" class="albumList">
+                    <img :src="album.img" alt="">
+                    <h1>{{album.title}}</h1>
+                    <h2>{{album.artist.toUpperCase()}}</h2>
+                    <h4>{{album.release}}</h4>
+                </div>
+         </div>  
+        </div>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
