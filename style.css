@@ -1,0 +1,208 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*MY STYLES----------------================================================================*/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background: linear-gradient(to top, #79C3C2,#AEB7D7);
+}
+
+.top{
+	width: 100%;
+	min-height: 500px;
+	/* background: linear-gradient(to bottom, #79C3C2, rgba(123, 195, 193,.01)); */
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0%,#A5B9D2 95%),
+	url('https://www.edmsauce.com/wp-content/uploads/2017/01/Shelter-Live-Tour-by-Joseph-DOria-Photography-2-e1483803531474.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+#app {
+	text-align: center;
+	
+}
+
+.albumList{
+	display: inline-block;
+	width: 25%;
+	margin: 75px 2%;
+	background-color: #ededed;
+	padding: 35px 20px;
+	box-shadow:1px 10px 53px rgba(0,0,0,0.3);
+	border-radius: 20px;
+}
+
+.albumList img{
+	width: 98%;
+	margin: 0 auto;
+}
+
+#app h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	padding: 10px 0;
+
+}
+#app h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	padding: 10px 0;
+
+}
+#app h4{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	padding: 10px 0;
+
+}
+
+.wrapper{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.top h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size:120px;
+	color: white;
+	padding-top: 10%;
+	text-shadow:1px 3px 5px rgba(0,0,0,0.3);
+
+}
+.top h1, .top span{
+	display: inline-block;
+}
+#logo{
+	font-size: 150px;
+	float: right;
+	margin-top: 8%;
+	margin-right: 25%;
+	transform: rotate(-10deg);
+	color: #EDEDED;
+	text-shadow:3px 6px 20px rgba(0,0,0,0.3);
+}
+
+
+
+@media (max-width: 1522px){
+	.top h1, .top span{
+		font-size: 80px;
+		display: block;
+		text-align: center;
+		
+	}
+	#logo{
+		margin: 0 auto;
+		display: block;
+		float: none;
+	}
+	.albumList{
+		width: 25%;
+		margin: 50px 2%;
+		background-color: #ededed;
+		padding: 35px 20px;
+		box-shadow:1px 10px 53px rgba(0,0,0,0.3);
+		border-radius: 20px;
+	}
+	.top i{
+		padding-top: 50px;
+	}
+}
+
+
+@media (max-width: 1350px){
+	.albumList{
+		width: 40%;
+		margin: 5% 2%;
+		background-color: #ededed;
+		padding: 35px 20px;
+		box-shadow:1px 10px 53px rgba(0,0,0,0.3);
+		border-radius: 20px;
+	}
+	.top i{
+		padding-top: 50px;
+	}
+}
+
+@media (max-width: 874px){
+	.albumList{
+		width: 95%;
+		margin: 5% 2%;
+		background-color: #ededed;
+		padding: 35px 20px;
+		box-shadow:1px 10px 53px rgba(0,0,0,0.3);
+		border-radius: 20px;
+	}
+	.top i{
+		padding-top: 50px;
+	}
+}
+
+@media (max-width: 649px){
+	.top{
+		min-height: 300px;
+		max-height: 300px;
+	}
+	.top h1, .top span, .top i{
+		font-size: 48px;
+		;
+	}
+	.top h1{
+		padding-top: 75px;
+	}
+	.top i{
+		padding-top: 50px;
+	}
+
+}
+
+
+
+
+
+
