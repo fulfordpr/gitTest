@@ -45,9 +45,7 @@ table {
 *{
 	box-sizing: border-box;
 }
-html, body{
-	overflow: hidden;
-}
+
 body{
 	background: linear-gradient(to top, #79C3C2,#AEB7D7);
 }
@@ -203,6 +201,8 @@ div.art:hover .listen button{
 	animation-name: scale;
 	animation-duration:1s;
 	animation-fill-mode: forwards;
+	width: 50%;
+	margin: auto;
 }
 @keyframes scale {
     100% {
