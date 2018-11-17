@@ -53,7 +53,7 @@ const albums = [
         artist: 'Skrillex',
         title:'Would You Ever (ft. Poo Bear)',
         release: '2017',
-        img:'http://womenofedm.com/wp-content/uploads/2017/08/Skrillex-Poo-Bear-Would-You-Ever.jpg',
+        img:'https://images-na.ssl-images-amazon.com/images/I/61vgas96xiL._SS500.jpg',
         link: 'spotify:track:57p8CBvPOxrvyCbn6ttl5r'
     },
     {
