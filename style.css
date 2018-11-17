@@ -207,6 +207,10 @@ div.art:hover .listen button{
         transform: scale(1,1); 
     }
 }
+.albumlist:hover{
+	transform: scale(1.1);
+	transition: transform 200ms ease-in-out;
+}
 #logo{
 	font-size: 150px;
 	float: right;
