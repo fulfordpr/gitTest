@@ -10,8 +10,7 @@
 
         <div class="top">
             <div class="wrapper">
-                <h1>Favorite EDM</h1>
-                <span id="logo"> <i class="fas fa-play"></i></span>
+                <h1>Electronic Gems<i class="far fa-gem"></i></h1>
 
             </div>
         </div>
@@ -19,7 +18,13 @@
         <div id="app">
             <div class="wrapper">
                 <div v-for="album in albums" class="albumList">
-                    <img :src="album.img" alt="">
+                    <div class="art">
+                        <img :src="album.img" alt="">
+                        <div class="listen">
+                            <i class="fab fa-spotify"></i>
+                            <button><a :href="album.link">Listen Now</a></button>
+                        </div>
+                    </div>
                     <h1>{{album.title}}</h1>
                     <h2>{{album.artist.toUpperCase()}}</h2>
                     <h4>{{album.release}}</h4>

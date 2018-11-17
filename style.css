@@ -70,22 +70,95 @@ body{
 .albumList{
 	display: inline-block;
 	width: 25%;
-	margin: 75px 2%;
+	margin: 25px 2%;
 	background-color: #ededed;
 	padding: 35px 20px;
 	box-shadow:1px 10px 53px rgba(0,0,0,0.3);
 	border-radius: 20px;
 }
-
-.albumList img{
+.art{
 	width: 98%;
+	position: relative;
 	margin: 0 auto;
+	background: #7EC2C2;
+	overflow: hidden;
+}
+.art img{
+	width: 100%;
+	position: relative;
+	z-index: 0;
+	margin: 0 auto;
+	transition: opacity .5s;
+}
+.art:hover img{
+	opacity: .3;
+}
+div.art i{
+	color: white;
+	position: absolute;
+	top: 45%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	font-size:4em;
+	visibility: hidden;
+	text-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+	opacity: 0;
+	
+	
+}
+div.art:hover i{
+	transform:scale(1.75);
+	opacity: 1;
+	transition:transform 300ms ease-in-out 0s,opacity .2s ease-in-out; 
+	visibility: visible;
+  }
+.listen button{
+	position: absolute;
+	top: 60%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 15%;
+	width: 45%;
+	margin:0 auto;
+	color: white;
+	border: 4px solid white;
+	background: rgba(0, 0, 0, 0);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+	border-radius: 50px;
+	opacity: 0;
+	visibility: hidden;
+}
+.listen a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+.listen button:hover{
+	background: white;
+	
+}
+.listen button:hover a{
+	color: #7CC3C1;
+}
+div.art:hover .listen button{
+	visibility: visible;
+	transform: scale(1.15);
+	transition: opacity .5s ease-in-out, transform 300ms ease-out ;
+	opacity: 1;
 }
 
 #app h1{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
 	padding: 10px 0;
+	white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
 
 }
 #app h2{
@@ -102,20 +175,37 @@ body{
 }
 
 .wrapper{
-	width: 90%;
+	width: 95%;
 	margin: 0 auto;
 }
 
 .top h1{
 	font-family: 'Montserrat', sans-serif;
+	display: block;
 	font-size:120px;
 	color: white;
 	padding-top: 10%;
-	text-shadow:1px 3px 5px rgba(0,0,0,0.3);
-
+	text-shadow:1px 3px 5px rgba(0,0,0,0.5),
+	1px 5px 20px rgba(0,0,0,0.3);
+	text-align: center;
 }
-.top h1, .top span{
-	display: inline-block;
+
+.top i{
+	display: block;
+	font-size:120px;
+	color: white;
+	text-shadow:1px 3px 5px rgba(0,0,0,0.5),
+	1px 5px 20px rgba(0,0,0,0.3);
+	text-align: center;
+	transform:scale(0,0);
+	animation-name: scale;
+	animation-duration:1s;
+	animation-fill-mode: forwards;
+}
+@keyframes scale {
+    100% {
+        transform: scale(1,1); 
+    }
 }
 #logo{
 	font-size: 150px;
@@ -164,9 +254,7 @@ body{
 		box-shadow:1px 10px 53px rgba(0,0,0,0.3);
 		border-radius: 20px;
 	}
-	.top i{
-		padding-top: 50px;
-	}
+	
 }
 
 @media (max-width: 874px){
@@ -178,9 +266,11 @@ body{
 		box-shadow:1px 10px 53px rgba(0,0,0,0.3);
 		border-radius: 20px;
 	}
-	.top i{
-		padding-top: 50px;
-	}
+
+	@keyframes scale {
+		100% {
+			transform: scale(1.5,1.5); 
+		}
 }
 
 @media (max-width: 649px){
